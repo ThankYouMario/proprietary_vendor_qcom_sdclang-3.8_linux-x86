@@ -1,15 +1,34 @@
+The following are the changes in the 3.8.6 release of Snapdragon LLVM ARM 
+C/C++ Toolchain over the 3.8.5 release
+
+1. Fix for halving operands exceeding size of the shift operation.
+
+---------------------------------------------------------------------------
+
+The following are the changes in the 3.8.5 release of Snapdragon LLVM ARM 
+C/C++ Toolchain over the 3.8.4 release
+
+1. Fix for -femulated-tls flag not getting passed to linker during LTO.
+2. Diagnostic information for "undefined shift behavior" warning, which now 
+points to the offending source line.
+3. Toolchain built with no default sysroot to prevent spurious NFS errors.
+
+---------------------------------------------------------------------------
+
 The following are the changes in 3.8.4 release of Snapdragon LLVM ARM C/C++
 Toolchain over the 3.8.3 release
-- Bug fix for error in backend when handling fp16 operation
+1. Bug fix for error in backend when handling fp16 operation
 
 -----------------------------------------------------------------------------
+
 This is release 3.8.3 of Snapdragon LLVM ARM C/C++ compiler toolchain. It has
 several bug fixes over the 3.8 release described below.
 
 -----------------------------------------------------------------------------
+
 This is the release of Snapdragon LLVM ARM C/C++ compiler toolchain version
 3.8. This is a cross toolchain built to run on x86 64-bit Ubuntu Linux
-(versions 10.04 and later) and Windows 64-bit platforms (Windows 7, 8 and 10).
+(versions 10.04 and later) and Windows 64-bit platforms (Windows 7 and later).
 This Snapdragon LLVM ARM Compiler will generate code only for ARM targets and
 will not generate code for any of the other targets supported by llvm.org LLVM.
 
@@ -25,12 +44,13 @@ NOTE: GLIBCXX_3.4.18 or higher is required to run Snapdragon LLVM 3.8 on Ubuntu
 x86 64-bit hosts; this library is typically available as part of Ubuntu
 distribution or GCC-4.8 x86 distributions.
 
-The complete user guide for this release of the Snapdragon LLVM ARM Compiler
-is avaialble as part of your download package under
+Complete user guides for this release of the Snapdragon LLVM ARM Compiler
+and Linker are avaialble as part of your download package under
 llvm-Snapdragon_LLVM_for_Android_3.8/prebuilt/<platform>/Snapdragon
-_LLVM_ARM_38_Compiler_User_Guide.pdf
+_LLVM_ARM_38_Compiler_User_Guide.pdf and Snapdragon_LLVM_ARM_38_Linker
+_User_Guide.pdf.
 
-Please post all questions about this release on
+Please post all questions about this release to
 http://developer.qualcomm.com/llvm-forum.
 
 The following are some of the key features in the 3.8 version compared to the
@@ -138,4 +158,4 @@ LLVM's Support for GCC command line options:
 
 Most of the commonly used GCC options are supported by LLVM as well. A detailed
 list of options supported is listed in chapter 3 of the Snapdragon LLVM ARM
-Compiler user guide.  
+Compiler User Guide.  
