@@ -1,4 +1,13 @@
-The following are the changes in the 3.8.6 release of Snapdragon LLVM ARM 
+The following are the changes in the 3.8.7 release of Snapdragon LLVM ARM
+C/C++ Toolchain over the 3.8.6 release
+
+1. Fixes for segmentation fault when building large codebases with LTO
+2. Fix for incorrect instruction combining optimization
+3. Fix for incorrect branch select optimization
+
+---------------------------------------------------------------------------
+
+The following are the changes in the 3.8.6 release of Snapdragon LLVM ARM
 C/C++ Toolchain over the 3.8.5 release
 
 1. Fix for halving operands exceeding size of the shift operation.
@@ -9,7 +18,7 @@ The following are the changes in the 3.8.5 release of Snapdragon LLVM ARM
 C/C++ Toolchain over the 3.8.4 release
 
 1. Fix for -femulated-tls flag not getting passed to linker during LTO.
-2. Diagnostic information for "undefined shift behavior" warning, which now 
+2. Diagnostic information for "undefined shift behavior" warning, which now
 points to the offending source line.
 3. Toolchain built with no default sysroot to prevent spurious NFS errors.
 
@@ -151,11 +160,11 @@ there are newer instructions in AArch32 ISA compared to ARMv7 ISA.
 This means that AArch32 executables cannot be executed on ARMv7 cores such
 as Krait.
 
-Please refer to section 3.4.19 of the Snapdragon LLVM ARM Compiler user guide to
-learn about various optimization flags.
+Please refer to section 3.4.19 of the Snapdragon LLVM ARM Compiler user guide
+to learn about various optimization flags.
 
 LLVM's Support for GCC command line options:
 
-Most of the commonly used GCC options are supported by LLVM as well. A detailed
-list of options supported is listed in chapter 3 of the Snapdragon LLVM ARM
-Compiler User Guide.  
+Most of the commonly used GCC options are supported by LLVM as well. A
+detailed list of options supported is listed in chapter 3 of the Snapdragon
+LLVM ARM Compiler User Guide.
